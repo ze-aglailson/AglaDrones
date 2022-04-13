@@ -11,7 +11,7 @@
 
 .container-cabecalho{
     width: 100%;
-    padding: v.$padding-container;
+    padding: v.$padding-cabecalho;
     position: fixed;
     z-index: 2;
 
@@ -26,8 +26,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 18px;
             a{
-                color: v.$cor-branco;
+                color: #000;
             }
         }
 
@@ -38,8 +39,8 @@
         }
 
         .btn-menu{
-            width: 25px;
-            height: 20px;
+            width: 22px;
+            height: 18px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -52,8 +53,8 @@
             .linha-btn{
                 display: block;
                 width: 100%;
-                height: 4px;
-                background-color:v.$cor-branco;
+                height: 3px;
+                background-color:v.$cor-azul-claro;
                 transition: .3s;
             }
         }
@@ -67,14 +68,14 @@
         .btn-menu-aberto{
             justify-content: center;
             .linha-btn-2{
-                margin-top: -4px;
+                margin-top: -3px;
                 transform: translateX(-100%);
             }
             .linha-btn-1{
                 transform: rotate(45deg);
             }
             .linha-btn-3{
-                margin-top: -4px;
+                margin-top: -3px;
                 transform: rotate(-45deg);
             }
         }
