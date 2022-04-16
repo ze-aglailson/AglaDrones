@@ -39,6 +39,7 @@
   display: flex;
   width: 70px;
   height: 70px;
+  margin-bottom: 15px;
 }
 .section-servicos .box-servico .icon-servico .icon {
   width: 100%;
