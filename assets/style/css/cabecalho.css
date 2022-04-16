@@ -27,10 +27,10 @@
   font-size: 22px;
 }
 .content-cabecalho .content-logo-btn-menu .logo a {
-  color: #00aaff;
+  color: #333;
 }
 .content-cabecalho .content-logo-btn-menu .logo-escuro a {
-  color: #333333;
+  color: #00aaff;
 }
 .content-cabecalho .content-logo-btn-menu .btn-menu {
   width: 22px;
