@@ -11769,7 +11769,7 @@ a {
 .section-home {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-home/fim-section-home;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 .section-home .box-titles {
   margin-bottom: 30px;
@@ -11782,9 +11782,6 @@ a {
 .section-home .box-titles .subtitle {
   font-family: "Work Sans", sans-serif;
   color: #645F88;
-}
-.section-home .box-btns-acao {
-  padding: 0 8%;
 }
 .section-home .box-btns-acao .btn-acao {
   display: block;
