@@ -11818,6 +11818,7 @@ a {
 }
 .section-home .box-imagem {
   padding: 10px;
+  display: flex;
 }
 
 @media screen and (min-width: 768px) {
