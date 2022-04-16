@@ -23,10 +23,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 22px;
 }
 .content-cabecalho .content-logo-btn-menu .logo a {
-  color: #333;
+  color: #00aaff;
 }
 .content-cabecalho .content-logo-btn-menu .logo-escuro a {
   color: #333333;

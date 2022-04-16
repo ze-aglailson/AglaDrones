@@ -2,7 +2,38 @@
 .section-home{
     grid-column: inicio-left / fim-rigth;
     grid-row:inicio-section-home / fim-section-home ;
-/*     background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url(../../video/video-banner-home.mp4); */
+    padding: 0 10%;
+
+    .box-titles{
+        margin-bottom: 30px;
+        .title{
+            color: #00aaff;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        .subtitle{
+            font-family: 'Work Sans',sans-serif;
+            color: #645F88;
+        }
+    }
+
+    .box-btns-acao{
+        padding: 0 8%;
+        .btn-acao{
+            display: block;
+            width: 100%;
+            padding: 6px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-sobre{
+            color: #333;
+            border: 1px solid #bab6b6;
+            margin-bottom: 20px;
+        }
+        .btn-orcamento{
+            color: #FFF;
+            background-color: #00aaff;
+        }
+    }
 }
