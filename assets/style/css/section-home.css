@@ -4,10 +4,11 @@
   padding: 0 5%;
 }
 .section-home .box-titles {
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .section-home .box-titles .title {
-  color: #000;
+  color: #00aaff;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -34,11 +35,19 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-home .box-titles {
+    margin-top: 0px;
+  }
   .section-home .box-btns-acao {
+    margin-top: 40px;
+    padding-right: 10%;
     justify-content: space-between;
   }
   .section-home .box-btns-acao .btn-acao {
-    width: 80%;
+    width: 60%;
+  }
+  .section-home .box-btns-acao .btn-sobre {
+    margin-bottom: 0;
   }
 }
 

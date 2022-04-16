@@ -5,9 +5,10 @@
     padding: 0 5%;
 
     .box-titles{
+        margin-top: 50px;
         margin-bottom: 20px;
         .title{
-            color: #000;
+            color: #00aaff;
             margin-bottom: 30px;
             font-weight: 600;
         }
@@ -40,11 +41,17 @@
 
 @media screen and (min-width: 768px) {
     .section-home{
+        .box-titles{
+            margin-top: 0px;
+        }
         .box-btns-acao{
+            margin-top: 40px;
+            padding-right: 10%;
             justify-content: space-between;
             .btn-acao{
-                width: 80%;
+                width: 60%;
             }
+            .btn-sobre{margin-bottom: 0;}
         }
     }
 }

@@ -3,7 +3,8 @@
 }
 
 .cabecalho-branco {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
+  box-shadow: 1px 1px 2px #00aaff;
 }
 
 .content-cabecalho {
@@ -109,7 +110,7 @@
 }
 .content-menu .menu-principal .ul-items-menu li.item:hover a {
   color: #333;
-  background-color: #ff6b81;
+  background-color: #00aaff;
 }
 
 .content-menu-aberto {
@@ -162,7 +163,7 @@
     color: #333;
   }
   .content-menu .menu-principal .ul-items-menu li.item:hover a {
-    color: #FFFFFF;
+    color: #00aaff;
     background-color: transparent;
     text-decoration: underline;
   }

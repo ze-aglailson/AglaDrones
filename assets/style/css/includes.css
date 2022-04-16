@@ -11605,7 +11605,8 @@ a {
 }
 
 .cabecalho-branco {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: white;
+  box-shadow: 1px 1px 2px #00aaff;
 }
 
 .content-cabecalho {
@@ -11711,7 +11712,7 @@ a {
 }
 .content-menu .menu-principal .ul-items-menu li.item:hover a {
   color: #333;
-  background-color: #ff6b81;
+  background-color: #00aaff;
 }
 
 .content-menu-aberto {
@@ -11764,7 +11765,7 @@ a {
     color: #333;
   }
   .content-menu .menu-principal .ul-items-menu li.item:hover a {
-    color: #FFFFFF;
+    color: #00aaff;
     background-color: transparent;
     text-decoration: underline;
   }
@@ -11775,10 +11776,11 @@ a {
   padding: 0 5%;
 }
 .section-home .box-titles {
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .section-home .box-titles .title {
-  color: #000;
+  color: #00aaff;
   margin-bottom: 30px;
   font-weight: 600;
 }
@@ -11805,11 +11807,19 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .section-home .box-titles {
+    margin-top: 0px;
+  }
   .section-home .box-btns-acao {
+    margin-top: 40px;
+    padding-right: 10%;
     justify-content: space-between;
   }
   .section-home .box-btns-acao .btn-acao {
-    width: 80%;
+    width: 60%;
+  }
+  .section-home .box-btns-acao .btn-sobre {
+    margin-bottom: 0;
   }
 }
 .section-servicos {
