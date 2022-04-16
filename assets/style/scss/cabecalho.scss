@@ -5,11 +5,11 @@
 }
 
 .cabecalho-branco{
-    background-color:v.$cor-branco;
+    background-color:rgba(255,255,255,.7);
     
 }
 
-.container-cabecalho{
+.content-cabecalho{
     width: 100%;
     padding: v.$padding-cabecalho;
     position: fixed;
@@ -28,7 +28,7 @@
             align-items: center;
             font-size: 18px;
             a{
-                color: #000;
+                color: #333;
             }
         }
 
@@ -117,11 +117,11 @@
                     display: block;
                     padding: 5px 30px;
                     font-size: .9em;
-                    color: v.$cor-secundaria;
+                    color: #333;
                 }
             }
             li.item:hover a{
-                color: v.$cor-branco;
+                color: #333;
                 background-color: v.$cor-primaria;
             }
         }
@@ -157,7 +157,7 @@
     
                         li.item{
                             a{
-                                color: v.$cor-secundaria;
+                                color: #333;
                             }
                         }
                     }
@@ -167,7 +167,7 @@
         }
         
     }
-    .container-cabecalho{
+    .content-cabecalho{
         .content-logo-btn-menu{
             .btn-menu{
                 display: none;
@@ -201,7 +201,7 @@
                 li.item{
                     width: auto;
                     a{
-                        color: v.$cor-branco;
+                        color: #333;
                     }
                 }
                 

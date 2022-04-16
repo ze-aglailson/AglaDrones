@@ -1,8 +1,8 @@
 window.addEventListener('load', function(){
-    const cabecalho = document.querySelector('.container-cabecalho')
+    const cabecalho = document.querySelector('.content-cabecalho')
     var alturaCabecalho = cabecalho.offsetHeight
     var posicaoScrollAtual = 0
-    let gridPrincipal = document.querySelector('.container-principal')
+    let gridPrincipal = document.querySelector('.content-principal')
 
     //A primeira section do grid principal deve ter um padding-top para descontar a altura do cabecalho
 

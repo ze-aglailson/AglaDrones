@@ -11559,7 +11559,8 @@ img {
   width: 100%;
 }
 
-ul {
+dl, ol, ul {
+  margin: 0;
   list-style: none;
   padding: 0;
 }
@@ -11572,11 +11573,11 @@ a {
   text-decoration: none;
 }
 
-.container-principal {
+.content-principal {
   position: relative;
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 30px [fim-rigth];
-  grid-template-rows: [inicio-section-home] min(100vh) [fim-section-home] 10px [inicio-section-servicos] min(100vh) [fim-section-servicos] 10px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
+  grid-template-rows: [inicio-section-home] min(60vh) [fim-section-home] 10px [inicio-section-servicos] min(100vh) [fim-section-servicos] 10px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
 }
 
 .contente-btn-volta-topo {
@@ -11604,35 +11605,35 @@ a {
 }
 
 .cabecalho-branco {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-.container-cabecalho {
+.content-cabecalho {
   width: 100%;
   padding: 10px 0px;
   position: fixed;
   z-index: 2;
 }
-.container-cabecalho .content-logo-btn-menu {
+.content-cabecalho .content-logo-btn-menu {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.container-cabecalho .content-logo-btn-menu .logo {
+.content-cabecalho .content-logo-btn-menu .logo {
   z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
 }
-.container-cabecalho .content-logo-btn-menu .logo a {
-  color: #000;
+.content-cabecalho .content-logo-btn-menu .logo a {
+  color: #333;
 }
-.container-cabecalho .content-logo-btn-menu .logo-escuro a {
+.content-cabecalho .content-logo-btn-menu .logo-escuro a {
   color: #333333;
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu {
+.content-cabecalho .content-logo-btn-menu .btn-menu {
   width: 22px;
   height: 18px;
   display: flex;
@@ -11644,27 +11645,27 @@ a {
   cursor: pointer;
   z-index: 2;
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu .linha-btn {
+.content-cabecalho .content-logo-btn-menu .btn-menu .linha-btn {
   display: block;
   width: 100%;
   height: 3px;
   background-color: #00AAFF;
   transition: 0.3s;
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu-escuro .linha-btn {
+.content-cabecalho .content-logo-btn-menu .btn-menu-escuro .linha-btn {
   background-color: #333333;
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu-aberto {
+.content-cabecalho .content-logo-btn-menu .btn-menu-aberto {
   justify-content: center;
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-2 {
+.content-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-2 {
   margin-top: -3px;
   transform: translateX(-100%);
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-1 {
+.content-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-1 {
   transform: rotate(45deg);
 }
-.container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-3 {
+.content-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-3 {
   margin-top: -3px;
   transform: rotate(-45deg);
 }
@@ -11703,10 +11704,10 @@ a {
   display: block;
   padding: 5px 30px;
   font-size: 0.9em;
-  color: #333333;
+  color: #333;
 }
 .content-menu .menu-principal .ul-items-menu li.item:hover a {
-  color: #FFFFFF;
+  color: #333;
   background-color: #ff6b81;
 }
 
@@ -11725,10 +11726,10 @@ a {
 
 @media screen and (min-width: 990px) {
   .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
-    color: #333333;
+    color: #333;
   }
 
-  .container-cabecalho .content-logo-btn-menu .btn-menu {
+  .content-cabecalho .content-logo-btn-menu .btn-menu {
     display: none;
   }
 
@@ -11757,7 +11758,7 @@ a {
     width: auto;
   }
   .content-menu .menu-principal .ul-items-menu li.item a {
-    color: #FFFFFF;
+    color: #333;
   }
   .content-menu .menu-principal .ul-items-menu li.item:hover a {
     color: #FFFFFF;
@@ -11768,6 +11769,9 @@ a {
 .section-home {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-home/fim-section-home;
+  /*     background-position: center center;
+      background-repeat: no-repeat;
+      background-image: url(../../video/video-banner-home.mp4); */
 }
 
 .section-servicos {

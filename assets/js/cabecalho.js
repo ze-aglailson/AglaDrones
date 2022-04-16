@@ -1,6 +1,6 @@
 window.addEventListener('load', function(){
 
-    const cabecalho = document.querySelector('.container-cabecalho')
+    const cabecalho = document.querySelector('.content-cabecalho')
     const logo = document.querySelector('.logo')
     const btnMenu = document.querySelector('.btn-menu')
     var alturaCabecalho = cabecalho.offsetHeight
