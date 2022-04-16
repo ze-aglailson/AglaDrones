@@ -5,9 +5,9 @@
     padding: 0 5%;
 
     .box-titles{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         .title{
-            color: #00aaff;
+            color: #000;
             margin-bottom: 30px;
             font-weight: 600;
         }
@@ -19,20 +19,32 @@
 
     .box-btns-acao{
         .btn-acao{
-            display: block;
             width: 100%;
-            padding: 6px 20px;
+            padding: 10px 25px;
             border-radius: 4px;
             cursor: pointer;
+            display: flex;
+            justify-content: space-between;
         }
         .btn-sobre{
-            color: #333;
-            border: 1px solid #bab6b6;
-            margin-bottom: 20px;
+            color: #00aaff;
+            border: 1px solid #00aaff;
+            margin-bottom: 25px;
         }
         .btn-orcamento{
             color: #FFF;
             background-color: #00aaff;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-home{
+        .box-btns-acao{
+            justify-content: space-between;
+            .btn-acao{
+                width: 80%;
+            }
         }
     }
 }
