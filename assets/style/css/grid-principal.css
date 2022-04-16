@@ -5,12 +5,28 @@
   grid-template-rows: [inicio-section-home] auto [fim-section-home] 90px [inicio-section-servicos] auto [fim-section-servicos] 10px [inicio-section-precos] min(100vh) [fim-section-precos] 10px [inicio-section-sobre] min(100vh) [fim-section-sobre] 10px [inicio-section-time] min(100vh) [fim-section-time] 10px [inicio-section-contato] min(100vh) [fim-section-contato] 10px;
 }
 
-.contente-btn-volta-topo {
+.content-btn-whatsapp-volta-topo {
   position: fixed;
   right: 30px;
   bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.contente-btn-volta-topo .btn-volta-top {
+.content-btn-whatsapp-volta-topo .btn-whatsapp .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.8em;
+  background: #25d366;
+  color: #FFF;
+  border-radius: 50%;
+}
+.content-btn-whatsapp-volta-topo .btn-volta-top {
+  width: 90%;
   padding: 5px 7px;
   border: 1px solid #FFFFFF;
   cursor: pointer;
@@ -19,8 +35,8 @@
   border-radius: 3px;
   display: none;
 }
-.contente-btn-volta-topo .btn-volta-top-visivel {
-  display: flex;
+.content-btn-whatsapp-volta-topo .btn-volta-top-visivel {
+  display: none;
   justify-content: center;
   align-items: center;
 }

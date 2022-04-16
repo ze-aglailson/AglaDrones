@@ -13,12 +13,29 @@
                     ;
 }
 
-.contente-btn-volta-topo{
+.content-btn-whatsapp-volta-topo{
     position: fixed;
     right: v.$padding-x-rigth-padrao;
     bottom:v.$padding-y-bottom-padrao;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .btn-whatsapp{
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            font-size: 1.8em;
+            background: #25d366;
+            color: #FFF;
+            border-radius: 50%;
+        }
+    }
     .btn-volta-top{
+        width: 90%;
         padding: 5px 7px;
         border: 1px solid v.$cor-branco;
         cursor: pointer;
@@ -29,7 +46,7 @@
     }
 
     .btn-volta-top-visivel{
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
     }
