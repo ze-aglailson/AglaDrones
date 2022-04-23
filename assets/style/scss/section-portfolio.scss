@@ -16,39 +16,47 @@
         [inicio-job-7] 200px [fim-job-7] 10px
         ;
 
-/*         .job:hover .background-job{
-            transform: scale(1.2);
-            transition: .3s;
-        } */
         .job{
             transition: .3s;
             grid-column: inicio-left / fim-rigth;
             background-color: #CCC;
             border-radius: 4px;
             overflow: hidden;
+            position: relative;
+            transition: .5s;
+            cursor: pointer;
             .background-job{
                 width: 100%;
                 height: 100%;
                 background-size: cover;
                 background-position: center center;
                 background-repeat: no-repeat;
-                .box-informacoes{
-                    .icon-coracao{
-                        width: 100%;
-                        display: flex;
-                        justify-content: flex-end;
-                        span{
-                            cursor: pointer;
-                            color: #FFF;
-                        }
-                    }
+                position: absolute;
+                top:0;
+                left: 0;
+                transition: .5s;
+                
+            }
+
+            .box-informacoes{
+                position: absolute;
+                top:0;
+                left: 0;
+                .icon-coracao{
                     width: 100%;
-                    height: 100%;
                     display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding: 10px;
+                    justify-content: flex-end;
+                    span{
+                        cursor: pointer;
+                        color: #FFF;
+                    }
                 }
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 10px;
                 .titles{
                     /* display: flex; */
                     display: none;
@@ -65,8 +73,11 @@
                         margin: 0;
                     }
                 }
-                
             }
+        }
+        .job:hover .background-job{
+            transition: .5s;
+            transform: scale(1.08);
         }
         .job-1{grid-row:inicio-job-1 / fim-job-1;}
         .job-2{grid-row:inicio-job-2 / fim-job-2;}

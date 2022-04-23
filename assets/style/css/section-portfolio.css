@@ -6,10 +6,6 @@
   display: grid;
   grid-template-columns: [inicio-left] 30px [inicio-temp] 1fr repeat(12, 5px 1fr) [fim-temp] 30px [fim-rigth];
   grid-template-rows: [inicio-job-1] 200px [fim-job-1] 10px [inicio-job-2] 200px [fim-job-2] 10px [inicio-job-3] 200px [fim-job-3] 10px [inicio-job-4] 200px [fim-job-4] 10px [inicio-job-5] 200px [fim-job-5] 10px [inicio-job-6] 200px [fim-job-6] 10px [inicio-job-7] 200px [fim-job-7] 10px;
-  /*         .job:hover .background-job{
-              transform: scale(1.2);
-              transition: .3s;
-          } */
 }
 .section-portfolio .grid-portfolio .job {
   transition: 0.3s;
@@ -17,6 +13,9 @@
   background-color: #CCC;
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .section-portfolio .grid-portfolio .job .background-job {
   width: 100%;
@@ -24,8 +23,15 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
 }
-.section-portfolio .grid-portfolio .job .background-job .box-informacoes {
+.section-portfolio .grid-portfolio .job .box-informacoes {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -33,29 +39,33 @@
   justify-content: space-between;
   padding: 10px;
 }
-.section-portfolio .grid-portfolio .job .background-job .box-informacoes .icon-coracao {
+.section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.section-portfolio .grid-portfolio .job .background-job .box-informacoes .icon-coracao span {
+.section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao span {
   cursor: pointer;
   color: #FFF;
 }
-.section-portfolio .grid-portfolio .job .background-job .titles {
+.section-portfolio .grid-portfolio .job .box-informacoes .titles {
   /* display: flex; */
   display: none;
   flex-direction: column;
 }
-.section-portfolio .grid-portfolio .job .background-job .titles .title {
+.section-portfolio .grid-portfolio .job .box-informacoes .titles .title {
   color: #FFF;
   font-size: 18px;
   font-weight: bold;
 }
-.section-portfolio .grid-portfolio .job .background-job .titles .subtitle {
+.section-portfolio .grid-portfolio .job .box-informacoes .titles .subtitle {
   font-size: 14px;
   color: #00aaff;
   margin: 0;
+}
+.section-portfolio .grid-portfolio .job:hover .background-job {
+  transition: 0.5s;
+  transform: scale(1.08);
 }
 .section-portfolio .grid-portfolio .job-1 {
   grid-row: inicio-job-1/fim-job-1;
