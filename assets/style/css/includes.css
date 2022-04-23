@@ -11993,6 +11993,7 @@ a {
 .section-portfolio .grid-portfolio .job:hover .background-job {
   transition: 0.5s;
   transform: scale(1.08);
+  background-position: center center;
 }
 .section-portfolio .grid-portfolio .job-1 {
   grid-row: inicio-job-1/fim-job-1;
