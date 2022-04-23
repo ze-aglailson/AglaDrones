@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .section-portfolio {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-section-portfolio/fim-section-portfolio;
@@ -36,17 +37,24 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
   padding: 10px;
+  overflow: hidden;
 }
 .section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao {
+  /* Deixar para a proxima versão */
   width: 100%;
-  display: flex;
+  /* display: flex; */
+  display: none;
   justify-content: flex-end;
 }
 .section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao span {
   cursor: pointer;
   color: #FFF;
+}
+.section-portfolio .grid-portfolio .job .box-informacoes .icon-coracao-active span {
+  color: #FF007f;
 }
 .section-portfolio .grid-portfolio .job .box-informacoes .titles {
   /* display: flex; */
@@ -63,10 +71,30 @@
   color: #00aaff;
   margin: 0;
 }
+.section-portfolio .grid-portfolio .job .box-informacoes .div-btn-detalhes {
+  display: flex;
+  justify-content: flex-end;
+  transform: translateY(150%);
+  transition: 0.5s;
+}
+.section-portfolio .grid-portfolio .job .box-informacoes .div-btn-detalhes .btn-detalhes {
+  background-color: #00aaff;
+  color: #FFF;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 12px;
+  padding: 6px;
+  border-radius: 2px;
+}
 .section-portfolio .grid-portfolio .job:hover .background-job {
   transition: 0.5s;
-  transform: scale(1.08);
+  transform: scale(1.06);
   background-position: center center;
+}
+.section-portfolio .grid-portfolio .job:hover .div-btn-detalhes {
+  transform: translateY(0);
+  transition: 0.5s;
 }
 .section-portfolio .grid-portfolio .job-1 {
   grid-row: inicio-job-1/fim-job-1;
