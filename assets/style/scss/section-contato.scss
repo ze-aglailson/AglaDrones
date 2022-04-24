@@ -5,10 +5,10 @@
     .content-canais-atendimento{
         display: flex;
         flex-direction: column;
+        margin-bottom: 40px;
         .title-content{
             color: #898798;
             margin-bottom: 20px;
-            text-align: center;
             font-family: "Work Sans", sans-serif;
             font-weight: 600;
         }
@@ -16,7 +16,6 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
             .item-lista{
                 min-width: 80%;
                 max-width: 80%;
@@ -38,8 +37,7 @@
         align-items: center;
         justify-content: center;
         .formulario-contato{
-            width: 500px;
-            max-width: 500px;
+            width: 100%;
             .form-group{
                 display: flex;
                 align-items: center;
@@ -75,6 +73,9 @@
         .content-canais-atendimento{
             .title-content{
                 text-align: left;
+            }
+            .lista-meios-contato{
+                align-items: flex-start;
             }
         }
         .content-formulario-contato{
