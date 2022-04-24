@@ -2,7 +2,37 @@
 .section-contato{
     grid-column: inicio-left / fim-rigth;
     grid-row:inicio-section-contato/fim-section-contato;
-
+    .content-canais-atendimento{
+        display: flex;
+        flex-direction: column;
+        .title-content{
+            color: #898798;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: "Work Sans", sans-serif;
+            font-weight: 600;
+        }
+        .lista-meios-contato{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .item-lista{
+                min-width: 80%;
+                max-width: 80%;
+                margin-bottom: 30px;
+                display: flex;
+                .icon{
+                    display: block;
+                    color: #00aaff;
+                    margin-right: 20px;
+                }
+                .content-texto{
+                    color: #898798;
+                }
+            }
+        }
+    }
     .content-formulario-contato{
         display: flex;
         align-items: center;
@@ -40,8 +70,13 @@
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     .section-contato{
+        .content-canais-atendimento{
+            .title-content{
+                text-align: left;
+            }
+        }
         .content-formulario-contato{
             justify-content: flex-end;
         }
