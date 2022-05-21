@@ -3,6 +3,17 @@
   grid-row: inicio-section-home/fim-section-home;
   padding: 0 5%;
 }
+.section-home .box-slider-principal-home {
+  width: 100%;
+  margin-top: 40px;
+}
+.section-home .box-slider-principal-home .slider-principal-home .item-slider {
+  height: 150px;
+  background-color: #00aaff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section-home .box-titles {
   margin-top: 50px;
   margin-bottom: 20px;

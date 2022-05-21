@@ -4,6 +4,21 @@
     grid-row:inicio-section-home / fim-section-home ;
     padding: 0 5%;
     
+    .box-slider-principal-home{
+        width: 100%;
+        margin-top: 40px;
+
+        .slider-principal-home{
+            .item-slider{
+                height: 150px;
+                background-color: #00aaff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
     .box-titles{
         margin-top: 50px;
         margin-bottom: 20px;
